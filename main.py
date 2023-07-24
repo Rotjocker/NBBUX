@@ -345,7 +345,7 @@ async def add_acccounts(bot, call):
             pass
     except Exception as e:
         await bot.send_message(cid, "يرجى ادخال رقم ! ")
-        return
+        #return
     for i in range(int(count)):
         i += 1
         s = await bot.ask(cid, f"ادخل كود بايرو للحساب رقم ({i}) : ")
@@ -487,4 +487,4 @@ if len(sys.argv) in {1, 3, 4}:
 else:
     bot.disconnect()
 
-# bot.run()
+bot.run()
