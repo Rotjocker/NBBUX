@@ -339,8 +339,7 @@ async def add_acccounts(bot, call):
         with open("prime.txt", "r") as f:
             text = f.read().split(":")
         if count >= 2 and str(user_id) not in text:
-            await bot.send_message(
-                cid, "للاسف الاشتراك الخاص بك لايسمح لك ب اضافة اكثر من حساب .")
+            await bot.send_message(cid, "للاسف الاشتراك الخاص بك لايسمح لك ب اضافة اكثر من حساب .")
             return
         else:
             pass
